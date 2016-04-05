@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ArtUp</string>
+    <string name="settings">Settings</string>
+    <string name="play">Play</string>
+    <string name="store">Store</string>
+    <string name="stats">Stats</string>
 </resources>
