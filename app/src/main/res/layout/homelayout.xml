@@ -10,12 +10,14 @@
         android:layout_weight="1">
 
         <LinearLayout
+            android:id="@+id/playLL"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:background="@color/red">
+            android:background="@color/red"
+            android:onClick="play">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -27,12 +29,14 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/statsLL"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:background="@color/green">
+            android:background="@color/green"
+            android:onClick="stats">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -51,12 +55,14 @@
         android:layout_weight="1">
 
         <LinearLayout
+            android:id="@+id/storeLL"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:background="@color/blue">
+            android:background="@color/blue"
+            android:onClick="store">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -68,12 +74,14 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/settingsLL"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:background="@color/orange">
+            android:background="@color/orange"
+            android:onClick="settings">
 
             <TextView
                 android:layout_width="wrap_content"
