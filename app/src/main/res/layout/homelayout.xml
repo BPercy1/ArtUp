@@ -14,13 +14,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@color/red">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
-                android:id="@+id/textView" />
+                android:text="@string/play"
+                android:id="@+id/playTV"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -28,13 +31,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@color/green">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
-                android:id="@+id/textView2" />
+                android:text="@string/stats"
+                android:id="@+id/statsTV"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -49,13 +55,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@color/blue">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
-                android:id="@+id/textView3" />
+                android:text="@string/store"
+                android:id="@+id/storeTV"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -63,13 +72,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@color/orange">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"
-                android:id="@+id/textView4" />
+                android:text="@string/settings"
+                android:id="@+id/settingsTV"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
