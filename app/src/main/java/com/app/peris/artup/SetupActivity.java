@@ -1,3 +1,5 @@
+package com.app.peris.artup;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -24,9 +26,7 @@ public class SetupActivity extends Activity implements View.OnClickListener, Com
     Spinner mPassesS, mTeamS, mTimeS, mPointsS;
     EditText mTimeET;
     Button mNext;
-    boolean mPassesBool;
-    int mPasses, mTeams, mTime, mPoints;
-    String mTimeUnit;
+    String mTimeUnit, mPasses, mTeams, mTime, mPoints;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,21 +50,26 @@ public class SetupActivity extends Activity implements View.OnClickListener, Com
     }
 
     public void next(View view){
-        mPasses = Integer.parseInt(mPassesS.getSelectedItem().toString());
-        mTeams = Integer.parseInt(mTeamS.getSelectedItem().toString());
-        mTime = Integer.parseInt(mTimeET.getText().toString());
-        mPoints = Integer.parseInt(mPointsS.getSelectedItem().toString());
+        mPasses = mPassesS.getSelectedItem().toString();
+        mTeams = mTeamS.getSelectedItem().toString();
+        mTime = mTimeET.getText().toString();
+        mPoints = mPointsS.getSelectedItem().toString();
         mTimeUnit = mTimeS.getSelectedItem().toString();
-        SharedPreferences prefs = this.getSharedPreferences(
-                "com.app.peris.artup", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = prefs.edit();
-        editor.putString("Passes", String.valueOf(mPasses));
-        editor.putString("Teams", String.valueOf(mTeams));
-        editor.putString("Time", String.valueOf(mTime));
-        editor.putString("Points", String.valueOf(mPoints));
-        editor.putString("TimeUnit", String.valueOf(mTimeUnit));
-        editor.putString("")
-        editor.commit();
+
+        if (mTime.matches("^[0-9]$")){
+            SharedPreferences prefs = this.getSharedPreferences(
+                    "com.app.peris.artup", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putString("Passes", String.valueOf(mPasses));
+            editor.putString("Teams", String.valueOf(mTeams));
+            editor.putString("Time", String.valueOf(mTime));
+            editor.putString("Points", String.valueOf(mPoints));
+            editor.putString("TimeUnit", String.valueOf(mTimeUnit));
+            editor.putBoolean("Saved", true);
+            editor.commit();
+        }else{
+            mTimeET.setError("Invalid Time");
+        }
     }
 
     @Override
