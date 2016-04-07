@@ -1,6 +1,8 @@
 package com.app.peris.artup;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -27,7 +29,14 @@ LinearLayout mPlay, mStats, mSettings, mStore;
     }
 
     public void play(View view){
-        //startActivity(Intent I(this, PlayLayout.class));
+        SharedPreferences prefs = this.getSharedPreferences(
+                "com.app.peris.artup", Context.MODE_PRIVATE);
+        if (prefs.getBoolean("Saved", false)){
+            //startActivity(Intent I(this, SetupActivity.class));
+        }else{
+            //find out where they're up to and then get shared prefs
+        }
+
     }
 
     public void stats(View view){
