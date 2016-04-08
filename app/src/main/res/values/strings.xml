@@ -4,4 +4,7 @@
     <string name="play">Play</string>
     <string name="store">Store</string>
     <string name="stats">Stats</string>
+    <string name="teamnames">Choose Your Team Names</string>
+    <string name="teamnumber">Team</string>
+    <string name="next">Next</string>
 </resources>
