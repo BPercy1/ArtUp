@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">ArtUp</string>
-    <string name="settings">Settings</string>
-    <string name="play">Play</string>
-    <string name="store">Store</string>
-    <string name="stats">Stats</string>
+    <string name="app_name">Relationship Destroyer</string>
+    <string name="settings">SETTINGS</string>
+    <string name="play">BEGIN DESTROYING</string>
+    <string name="store">BUY AMMUNITION</string>
+    <string name="stats">DEATH RATES</string>
 </resources>
