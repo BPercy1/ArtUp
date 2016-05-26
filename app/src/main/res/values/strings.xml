@@ -15,7 +15,7 @@
     <string name="next">Next</string>
 
     <!-- TEAMS -->
-    <string name="chooseteam">Choose who you want to lose</string>
+    <string name="chooseteam">Choose your teams</string>
     <string name="teamname">Team Name</string>
     <string name="playername">Player Name</string>
     <string name="addplayer">Add a player</string>
