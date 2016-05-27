@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.peris.artup.Fragments.CardFragment"
+    android:background="#fff">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/timer_card"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/card_card"
+        android:layout_below="@+id/timer_card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="131dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct"
+        android:id="@+id/correct_card"
+        android:layout_marginBottom="109dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/card_card"
+        android:layout_toStartOf="@+id/card_card"
+        android:onClick="correct"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pass"
+        android:id="@+id/pass_card"
+        android:layout_alignTop="@+id/correct_card"
+        android:layout_toRightOf="@+id/card_card"
+        android:layout_toEndOf="@+id/card_card"
+        android:onClick="pass"/>
+</RelativeLayout>
