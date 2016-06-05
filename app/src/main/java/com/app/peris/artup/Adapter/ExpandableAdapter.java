@@ -1,6 +1,7 @@
 package com.app.peris.artup.Adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,6 +62,7 @@ public class ExpandableAdapter extends BaseExpandableListAdapter {
 
     @Override
     public Object getGroup(int groupPosition) {
+        Log.d("groupposition", this.headers.get(groupPosition));
         return this.headers.get(groupPosition);
     }
 
